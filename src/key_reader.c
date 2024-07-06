@@ -53,7 +53,6 @@ int read_key( const char *file_path, char *key )
         return 1;
     }
 
-    // Get directory path from exec_path
     char *last_slash = strrchr( exec_path, '/' );
 #ifdef _WIN32
     if (!last_slash) {
@@ -62,10 +61,9 @@ int read_key( const char *file_path, char *key )
 #endif
     if ( last_slash )
     {
-        *last_slash = '\0'; // Remove the executable name from the path
+        *last_slash = '\0';
     }
 
-    // Construct the full path to key.txt
     char key_path[PATH_MAX];
     snprintf( key_path, sizeof( key_path ), "%s/%s", exec_path, file_path );
 
