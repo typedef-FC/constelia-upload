@@ -14,10 +14,10 @@
 cmake_minimum_required(VERSION 3.28)
 
 
-project(constelia_upload C)
+project(constelia-upload C)
 set(CMAKE_C_STANDARD 11)
 
-add_executable(constelia_upload src/main.c
+add_executable(constelia-upload src/main.c
         src/include/curl_helper.h
         src/include/key_reader.h
         src/include/file_reader.h
@@ -26,4 +26,4 @@ add_executable(constelia_upload src/main.c
         src/file_reader.c
 )
 
-target_link_libraries(constelia_upload curl)
+target_link_libraries(constelia-upload curl)
