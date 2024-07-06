@@ -85,6 +85,9 @@ int upload_file( const char *url_base, const char *key, const char *content, lon
 
             snprintf( cb_buffer, sizeof( cb_buffer ), "echo '%s' | wl-copy", data.memory );
             system( cb_buffer );
+
+            snprintf( cb_buffer, sizeof( cb_buffer ), "notify-send constelia-upload \"[%s] copied to clipboard!\"", data.memory );
+            system( cb_buffer );
 #else
             snprintf(cb_buffer, sizeof(cb_buffer), "echo %s | clip", data.memory);
             system(cb_buffer);
