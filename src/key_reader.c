@@ -48,7 +48,7 @@ int read_key( const char *file_path, char *key )
     char exec_path[PATH_MAX];
     if ( get_executable_path( exec_path, sizeof( exec_path )) != 0 )
     {
-        perror( "Failed to get executable path" );
+        perror( "failed to get executable path" );
         return 1;
     }
 
