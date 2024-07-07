@@ -1,6 +1,8 @@
 # constelia.upload
 
-Uploader for Linux. You can integrate this with Dolphin, or Thunar by seeing this [thread (click me)](https://constelia.ai/forums/index.php?threads/constelia-upload-linux-wrapper-for-i-constelia-ai-wayland-x11.10160/#post-81216).
+Uploader for Linux (X11/Wayland). This will automatically set your clipboard to the auto-generated URL from the Web API. 
+
+You can integrate this with Dolphin, or Thunar by seeing this [thread (click me)](https://constelia.ai/forums/index.php?threads/constelia-upload-linux-wrapper-for-i-constelia-ai-wayland-x11.10160/#post-81216).
 
 ## Usage
 
